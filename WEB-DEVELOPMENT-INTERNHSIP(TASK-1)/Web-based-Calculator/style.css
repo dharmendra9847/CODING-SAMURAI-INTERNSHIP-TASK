@@ -1,0 +1,108 @@
+/* ----- POPPINS FONT Link ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ----- VARIABLES ----- */
+:root {
+  --body-color: rgb(51, 255, 216);
+  --color-white: rgb(255, 255, 255);
+}
+
+/* ----- BASE ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----- SMOOTH SCROLL ----- */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: rgb(51, 255, 216);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.calculator {
+  background: rgb(17, 14, 14);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.calculator .heading {
+  text-align: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+#user-input {
+  height: 60px;
+  font-size: 40px;
+  color: var(--color-white);
+  margin-bottom: 10px;
+  text-align: right;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 290px;
+  transition: 0.5s;
+  background: #01473a;
+}
+
+.calculator button {
+  height: 60px;
+  width: 60px;
+  background: rgb(41, 40, 40);
+  color: var(--color-white);
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.5s;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.calculator button:hover {
+  background: rgb(26, 25, 25);
+}
+
+.calculator .operator {
+  color: var(--color-white);
+  background: orange;
+  transition: background 0.5s;
+}
+
+.calculator .equalTobutton {
+  background: #00ff4c;
+  color: var(--color-white);
+  transition: background 0.5s;
+}
+
+.calculator .equalTobutton:hover {
+  background: #6ecdcd;
+}
+
+.calculator .del {
+  transition: background 0.5s;
+}
+
+.calculator .del:hover {
+  background: #f54646;
+  color: var(--color-white);
+}
